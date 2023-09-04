@@ -2,11 +2,14 @@ export const Component = () => {
   return (
     <div
       // How do I figure out what type aria-posinset expects?
-      aria-posinset={}
+      // Mouse hover, or ctrl + click
+      aria-posinset={1}
       // How do I figure out what type onChange expects?
-      onChange={}
+      // Mouse hover, or ctrl + click
+      onChange={(event) => {} }
 
       // How do I get autocomplete with JSX?
+      // ctrl + space
     />
   );
 };
