@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 interface TagState {
-  tagSelected: number | null;
+  tagSelected: number | null; 
   tags: { id: number; value: string }[];
 }
 
@@ -17,7 +17,7 @@ export const Tags = () => {
           <button
             key={tag.id}
             onClick={() => {
-              setState((currentState) => ({
+              setState((currentState): TagState => ({
                 ...currentState,
                 // @ts-expect-error
                 tagselected: tag.id,
@@ -30,7 +30,7 @@ export const Tags = () => {
       })}
       <button
         onClick={() => {
-          setState((currentState) => ({
+          setState((currentState): TagState => ({
             ...currentState,
             tags: [
               ...currentState.tags,

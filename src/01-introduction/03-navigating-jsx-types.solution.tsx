@@ -5,6 +5,7 @@ export const Component = () => {
       onChange={() => {}} // React.FormEventHandler<HTMLDivElement> | undefined
 
       // How do I get autocomplete with JSX: ctrl-space
+      
     />
   );
 };
